@@ -7,6 +7,20 @@
 //Unlike languages such as Typescript or Java, you don't need to declare the data type of a variable explicitly.
 const score=100
 //refrence datatype: array,objects,functions // their datatype is OBJECTS
+//////////////////////////////////////////////////////////////
 
 
+// stack (primative) in stack you will get a copy of that and orignal change ni hoga  jb k heap mn hoga, Heap(non-primative) memory 
+
+let pOne={
+    email:"pOne.com",
+    pId:"weqdzxc"
+}
+let pTwo=pOne
+
+pTwo.email="pTwo.com"
+
+
+console.log("POne:",pOne.email);
+console.log("PTwo:",pTwo.email);
 
