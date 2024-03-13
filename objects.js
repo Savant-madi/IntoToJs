@@ -96,7 +96,7 @@ const users=[ // you will use arrays into object mostly in production value
 ]
 
 users[1].email
-console.log(app);
+// console.log(app);
 
 // console.log(Object.keys(app)); // with this datatype will be array and you can run a loop at it
 // console.log(Object.values(app)); // will give only values
@@ -104,4 +104,58 @@ console.log(app);
 
 
 // console.log(app.hasOwnProperty("isLoggedIn")); // for checking the is the property exists
+
+
+
+
+
+
+
+//Desturctring   can be used in objects and arrays
+
+const course={
+    courseName:"js",
+    price:999,
+    courseinst:"hammad"
+
+}
+
+// course.courseinst
+
+const {courseinst:ins}= course
+console.log(ins);
+
+
+// const navbar=({company})=>{ // destructring used in react 
+
+// }
+
+
+// navbar(company="hmmm")
+
+
+//json is object without name in string
+{
+    "name":"hammad",
+    "courseName":"js",
+    "price": "free"
+}
+//api in arrays
+[
+    {
+
+    },
+    {
+        
+    },
+    {
+
+    }
+]
+
+
+
+
+
+
 
