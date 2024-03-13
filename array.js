@@ -38,6 +38,39 @@ myArr.pop(); // removes last value
 // console.log(myn2);
 
 
+const mH=["T","I","S"]
+const dC=["S","F","B"]
+// const aH=mH.push(dC) // push only tells the array size like mh has 4 indexs and adds dc in that array as 1 index
+// console.log(mH);
+// console.log(mH[3][1]);// gives only this value output
+
+// const aH=mH.concat(dC) //merges both arrays in a single array
+// console.log(aH);
+
+// const Ah=[...mH, ...dC] // spread opeator also merges the arrays indexes
+// console.log(Ah);
+
+
+// const anotherArray=[1,2,3,[4,5,6],7,[6,7],[4,5]]
+
+// // const realAnotherArray=anotherArray.flat()// spread all into one
+// // console.log(realAnotherArray);
+
+// console.log(Array.isArray(["hammad"]))//check if its an array or not
+// console.log(Array.from("hammad")) // makes string or other into array
+
+// let score1=100
+// let score2=200
+// let score3=300
+
+// console.log(Array.of(score1,score2,score3));//converts into arrays
+
+
+
+
+
+
+
 
 
 
