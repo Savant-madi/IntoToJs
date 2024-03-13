@@ -1,2 +1,2 @@
-# IntoToJs
+# IntroToJs
 Learning Js from scratch
