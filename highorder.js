@@ -141,7 +141,7 @@ const coding=["js","ruby","python","cpp"]
 
 
 
-const myNums=[1,2,3,4,5,6,7,8,9,10]
+// const myNums=[1,2,3,4,5,6,7,8,9,10]
 // filter uses a callback function and you have to give a condition and will return filter out the values
 // const newNums=myNums.filter((num)=> num>5) //if you use arrow fn in a single line then no parenthesis are needed and will return the value automatically but if the statement is long or put in parenthises then YOU MUST USE RETURN OTHERWISE IT WILL GIVE AN EMPTY ARRAY AS AN OUTPUT CHECK IT BELOW
 
@@ -205,6 +205,80 @@ const myNums=[1,2,3,4,5,6,7,8,9,10]
 // })
 
 // console.log(myBooks);
+
+// const myNumbers=[1,2,3,4,5,6,7,8,9,10]
+
+// const newNums=myNumbers.map((num)=>num+10)
+
+
+//if we want to use for each instead of map
+// const newNums=[]
+// myNumbers.forEach((num)=>{
+//     num=num+10
+
+//     newNums.push(num)
+// })
+// you can use map and filter more than one time but REMEMBER when you add a second map like below first map will execute and make an array like [10,20,30,40 and so] then the seccond map will add 1 in that first map return values and adds them and show the output IT IS CALLED CHAINING
+// const newNums=myNumbers.map((num)=>num*10).map((num)=>num+1)
+
+// console.log(newNums);
+
+
+
+
+
+//REDUCE METHOD..................
+
+
+// const myNums=[1,2,3]
+
+// const myTotal=myNums.reduce((acc,curval)=>{
+//     console.log(`acc: ${acc} and curval: ${curval}`);
+//     return acc+curval
+// },0)
+
+// console.log(myTotal);
+
+
+const shoppingCart=[{
+    itemName:"js Course",
+    price:2900
+},
+{
+    itemName:"mobile dev",
+    price:2400
+},
+{
+    itemName:"data science",
+    price:29000
+},
+{
+    itemName:"py Course",
+    price:2590.4
+},]
+
+const priceToPay=shoppingCart.reduce((acc,item)=>{
+  return acc+ item.price
+},0)
+console.log(priceToPay);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
