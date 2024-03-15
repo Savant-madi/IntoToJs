@@ -84,7 +84,7 @@ const myObject={
 
 
 
-const coding=["js","ruby","python","cpp"]
+// const coding=["js","ruby","python","cpp"]
 // //callback function donot have a name
 // // coding.forEach( function (item){
 // // console.log(item);
@@ -108,24 +108,120 @@ const coding=["js","ruby","python","cpp"]
 
 
 // we can use for each in mutiple objects in an array and get access it key and value in each iteration of objects in array it is mostly used in databases
-const myCoding=[
-    {
-        languageName:"javascript",
-        languageFile:"js"
-    },
-    {
-        languageName:"java",
-        languageFile:"java"
-    },
-    {
-        languageName:"python",
-        languageFile:"py"
-    }
-]
+// const myCoding=[
+//     {
+//         languageName:"javascript",
+//         languageFile:"js"
+//     },
+//     {
+//         languageName:"java",
+//         languageFile:"java"
+//     },
+//     {
+//         languageName:"python",
+//         languageFile:"py"
+//     }
+// ]
 
-myCoding.forEach((item)=>{
-    console.log(item.languageFile);
-})
+// myCoding.forEach((item)=>{
+//     console.log(item.languageFile);
+// })
+
+
+
+const coding=["js","ruby","python","cpp"]
+
+//undefined 
+// const val=coding.forEach((item)=>{
+//     // console.log(item);
+//     return item
+// })
+
+// console.log(val);
+
+
+
+const myNums=[1,2,3,4,5,6,7,8,9,10]
+// filter uses a callback function and you have to give a condition and will return filter out the values
+// const newNums=myNums.filter((num)=> num>5) //if you use arrow fn in a single line then no parenthesis are needed and will return the value automatically but if the statement is long or put in parenthises then YOU MUST USE RETURN OTHERWISE IT WILL GIVE AN EMPTY ARRAY AS AN OUTPUT CHECK IT BELOW
+
+
+// const newNums=myNums.filter((num)=>{
+//     return num>5 // if you dont put "return" it will not return any value will only give you an empty array because when you parenthesis opens a scope 
+// })
+
+// const newNums=[]
+//if we want to use foreach loop instead of filter then first declare an empty array then use if for conditon and then push(add) the value in the empty array you will get the same answer
+// myNums.forEach((num)=>{
+//     if (num>5) {
+//         newNums.push(num)
+//     }
+
+// })
+    
+
+// console.log(newNums);
+
+//FILTERS EXAMPLE BELOW
+// const books=[{
+//     title:"book one",
+//     genre:"fiction",
+//     publish:1980,
+//     edition:2010
+// },{
+//     title:"book two",
+//     genre:"non-fiction",
+//     publish:1920,
+//     edition:2000
+// },
+// {
+//     title:"book three",
+//     genre:"science",
+//     publish:1985,
+//     edition:2015
+// },
+// {
+//     title:"book four",
+//     genre:"fiction",
+//     publish:1930,
+//     edition:2050
+// },
+// {
+//     title:"book five",
+//     genre:"history",
+//     publish:1990,
+//     edition:2020
+// },
+// {
+//     title:"book six",
+//     genre:"science",
+//     publish:1934,
+//     edition:2040
+// }]
+
+
+// const myBooks=books.filter((bk)=>{
+//     return bk.publish>1934
+// })
+
+// console.log(myBooks);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
